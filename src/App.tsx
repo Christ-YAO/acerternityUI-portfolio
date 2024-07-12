@@ -39,14 +39,14 @@ function HeroSection() {
 
   return (
     <div className="w-full h-screen bg-black bg-grid-white/[0.1] relative flex items-center justify-center">
-      <div className="absolute pointer-event-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellips_at_center, transparent_1%,black)]"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center, transparent_1%,black)]"></div>
       <div className="w-full h-full flex flex-col items-center justify-center gap-32">
-        <div className="w-full max-w-5xl h-1/2 flex flex-col-reverse sm:flex-row items-center gap-8 ma:gap-16 text-left">
-          <div className="w-full sm:w-full h-1/2 sm:h-full flex flex-col items-center sm:px-6">
+        <div className="w-full max-w-5xl h-1/2 flex flex-col-reverse sm:flex-row items-center gap-8 md:gap-16 text-left">
+          <div className="w-full h-1/2 sm:h-full flex flex-col items-center sm:px-6">
             <p className="text-4xl sm:text-7xl font-bold reletive z-20 py-8">
               Hello Friend!
             </p>
-            <p className="text-zinc-500 font-semibold text-center sm:text-left">
+            <p className="text-zinc-500 font-semibold text-center sm:text-left z-30">
               I'm a passionate Full-stack web developer with over a year of
               experience bulding stunning, responsives websites and web
               applications. Originally from Ivory Cost.
@@ -139,7 +139,7 @@ function ContactSection() {
 
 function App() {
   return (
-    <div className="w-fit w-full text-white">
+    <div className="h-fit w-full text-white">
       <HeroSection />
       <ProjectsSection />
       <ContactSection />
